@@ -11,10 +11,9 @@ class ExampleResourceTest {
     @Test
     fun testHelloEndpoint() {
         given()
-            .`when`().get("/hello")
+            .`when`().get("/rooms")
             .then()
             .statusCode(200)
-            .body(`is`("Hello from Quarkus REST"))
     }
 
 }
