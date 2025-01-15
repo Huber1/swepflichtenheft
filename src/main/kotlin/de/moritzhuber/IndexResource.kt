@@ -6,9 +6,7 @@ import jakarta.ws.rs.core.Response
 import java.net.URI
 
 @Path("/")
-class ExampleResource {
+class IndexResource {
     @GET
-    fun hello(): Response {
-        return Response.temporaryRedirect(URI.create("/rooms")).build()
-    }
+    fun hello(): Response = Response.temporaryRedirect(URI.create("/rooms")).build()
 }
